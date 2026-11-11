@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {readFile,access} from 'node:fs/promises';
+await import('./build.mjs');
+const root=new URL('../dist/',import.meta.url);
+const html=await readFile(new URL('index.html',root),'utf8');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+assert.equal(new Set(ids).size,ids.length,'Duplicate HTML IDs');
+for(const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]),`Missing anchor: ${match[1]}`);
+for(const match of html.matchAll(/(?:src|href)="\.\/([^"]+)"/g)) await access(new URL(match[1],root));
+assert.ok(html.includes('<html lang="ja">'));
+assert.ok(!/undefined|\[object Object\]|TODO|Lorem ipsum/.test(html),'Unexpected placeholder');
+console.log('Checked internal links，local assets，unique IDs，language and generated content．');

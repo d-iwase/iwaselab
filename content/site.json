@@ -1,0 +1,25 @@
+{
+  "name": "空間情報研究室",
+  "englishName": "Spatial Information Laboratory",
+  "institution": "弓削商船高等専門学校",
+  "schoolUrl": "https://www.yuge.ac.jp/",
+  "headline": ["空間を捉え，", "地域の未来を考える．"],
+  "description": "点群データ処理，3次元計測，GIS・地理情報を基盤に，防災や維持管理への応用に取り組んでいく研究室です．",
+  "about": "実空間を計測し，データとして捉え，地域の課題を考える．空間情報研究室では，計測からデータ処理，活用までをつなぐ研究を目指します．",
+  "researchIntro": "これから取り組んでいく研究テーマです．空間を記録する技術と，その情報を社会で生かす方法を考えます．",
+  "research": [
+    {"number": "01", "en": "MEASUREMENT", "title": "3次元計測", "text": "実空間の形状を3次元で捉え，地域や構造物の状態を記録するための計測手法を検討します．", "tags": ["3次元計測", "空間の記録"]},
+    {"number": "02", "en": "SPATIAL DATA", "title": "点群データ処理・GIS", "text": "点群データの処理とGIS・地理情報の活用を通じて，計測した空間の特徴を読み解く方法を考えます．", "tags": ["点群データ処理", "GIS・地理情報"]},
+    {"number": "03", "en": "APPLICATION", "title": "防災・維持管理", "text": "空間情報を防災や維持管理に役立てるために，現場の状況を把握し，判断を支える情報の活用方法を検討します．", "tags": ["防災", "維持管理"]}
+  ],
+  "news": [],
+  "members": [],
+  "publications": [],
+  "address": "〒794-2593 愛媛県越智郡上島町弓削下弓削1000",
+  "accessUrl": "https://www.yuge.ac.jp/",
+  "contactEmail": "",
+  "sources": [
+    {"label": "学校公式サイト", "url": "https://www.yuge.ac.jp/"},
+    {"label": "学校公式サイト・研究者要覧（学校所在地の確認）", "url": "https://www.yuge.ac.jp/step/researcher"}
+  ]
+}
